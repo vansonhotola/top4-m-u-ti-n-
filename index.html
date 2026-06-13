@@ -567,6 +567,15 @@ fbq('track', 'PageView');
 src="https://www.facebook.com/tr?id=1018742837168396&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('a[href*="proudpatriots.com"]').forEach(function(link) {
+    link.addEventListener('click', function() {
+      fbq('track', 'Lead');
+    });
+  });
+});
+</script>
 </head>
 <body>
 
